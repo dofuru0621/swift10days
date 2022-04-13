@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qmu-eE-5LN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GuessNumber-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Day3_guessNumber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JdF-nB-C7F">
+                                <rect key="frame" x="59" y="282" width="297" height="79.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8d-11-ANi">
+                                        <rect key="frame" x="20" y="23" width="123" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="f9o-cP-B2v"/>
+                                            <constraint firstAttribute="width" constant="123" id="qda-ot-kEf"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Your Guess:">
+                                                <attributes>
+                                                    <font key="NSFont" size="26" name="GillSans-SemiBoldItalic"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jzz-gn-2bK">
+                                        <rect key="frame" x="180" y="20" width="97" height="39.5"/>
+                                        <accessibility key="accessibilityConfiguration" hint="0"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="97" id="GeB-Rw-Z1J"/>
+                                            <constraint firstAttribute="height" constant="39.5" id="kFP-fE-0h2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zVf-1z-KK5" firstAttribute="bottom" secondItem="Jzz-gn-2bK" secondAttribute="bottom" constant="20" id="QyI-jT-WNN"/>
+                                    <constraint firstItem="p8d-11-ANi" firstAttribute="top" secondItem="zVf-1z-KK5" secondAttribute="top" constant="23" id="Rkv-r3-kMz"/>
+                                    <constraint firstItem="Jzz-gn-2bK" firstAttribute="leading" secondItem="p8d-11-ANi" secondAttribute="trailing" constant="37" id="S3k-xI-HXg"/>
+                                    <constraint firstItem="Jzz-gn-2bK" firstAttribute="top" secondItem="zVf-1z-KK5" secondAttribute="top" constant="20" id="TKp-q5-QBX"/>
+                                    <constraint firstItem="zVf-1z-KK5" firstAttribute="trailing" secondItem="Jzz-gn-2bK" secondAttribute="trailing" constant="20" id="jfm-0s-qDm"/>
+                                    <constraint firstItem="p8d-11-ANi" firstAttribute="leading" secondItem="zVf-1z-KK5" secondAttribute="leading" constant="20" id="n7D-Z9-4pZ"/>
+                                    <constraint firstItem="zVf-1z-KK5" firstAttribute="bottom" secondItem="p8d-11-ANi" secondAttribute="bottom" constant="24.5" id="qLZ-zF-L6a"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Nvv-c0-wDb"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="zVf-1z-KK5"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSC-ff-DwS">
+                                <rect key="frame" x="0.0" y="390" width="414" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="3Nm-4m-oUf"/>
+                                    <constraint firstAttribute="width" constant="414" id="hWQ-pj-Q98"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Welcome!!">
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="GillSans-SemiBoldItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaU-yL-gPz">
+                                <rect key="frame" x="143" y="545" width="128" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JdF-UD-uAj"/>
+                                    <constraint firstAttribute="width" constant="128" id="Rgx-ux-XqK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Guess">
+                                            <attributes>
+                                                <font key="NSFont" size="30" name=".SFNS-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="🙏🏻">
+                                            <attributes>
+                                                <font key="NSFont" size="30" name=".AppleColorEmojiUI"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="guessButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nhg-fe-aGL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BK9-UU-kNC">
+                                <rect key="frame" x="143" y="677" width="138" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="7qU-c0-0y5"/>
+                                    <constraint firstAttribute="width" constant="138" id="mAs-yu-Vy3"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="peep">
+                                            <attributes>
+                                                <font key="NSFont" size="30" name="Times-Roman"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="guessButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PSS-IJ-XNt"/>
+                                    <action selector="peepButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cbW-2k-F2q"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJu-1W-V0o">
+                                <rect key="frame" x="184" y="770" width="56" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5di-9e-w4a"/>
+                                    <constraint firstAttribute="width" constant="56" id="ti3-M1-BKX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nJu-1W-V0o" secondAttribute="trailing" constant="172" id="0ZT-Vv-NoD"/>
+                            <constraint firstItem="qaU-yL-gPz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="1Se-WG-Cti"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qaU-yL-gPz" secondAttribute="trailing" constant="143" id="9TY-oD-8Rr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qaU-yL-gPz" secondAttribute="bottom" constant="267" id="CZQ-ZB-61T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BK9-UU-kNC" secondAttribute="trailing" constant="133" id="JWZ-oh-Rcg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BK9-UU-kNC" secondAttribute="bottom" constant="143" id="POb-OI-Aci"/>
+                            <constraint firstItem="BK9-UU-kNC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="SNA-jZ-gDW"/>
+                            <constraint firstItem="nJu-1W-V0o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="186" id="VMo-4u-jih"/>
+                            <constraint firstItem="JdF-nB-C7F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="YjY-i3-C0b"/>
+                            <constraint firstItem="JdF-nB-C7F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="194" id="aww-hW-jtp"/>
+                            <constraint firstItem="aSC-ff-DwS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fkK-3r-l4B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JdF-nB-C7F" secondAttribute="trailing" constant="58" id="im6-uy-psj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nJu-1W-V0o" secondAttribute="bottom" constant="71" id="lp1-kO-Tp9"/>
+                            <constraint firstItem="qaU-yL-gPz" firstAttribute="top" secondItem="aSC-ff-DwS" secondAttribute="bottom" constant="78" id="nds-6I-eHf"/>
+                            <constraint firstItem="aSC-ff-DwS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ycE-Zl-C8K"/>
+                            <constraint firstItem="aSC-ff-DwS" firstAttribute="top" secondItem="JdF-nB-C7F" secondAttribute="bottom" constant="28.5" id="ze5-Mi-8l2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="GuessNumber" id="dnp-Fz-YYA">
+                        <barButtonItem key="leftBarButtonItem" title="Reset" id="tUl-sf-ZKY">
+                            <connections>
+                                <action selector="reset:" destination="BYZ-38-t0r" id="Naj-v6-HV0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="inputNumber" destination="Jzz-gn-2bK" id="oF5-7P-xGZ"/>
+                        <outlet property="messageLabel" destination="aSC-ff-DwS" id="6wv-Jw-RBk"/>
+                        <outlet property="peepNum" destination="nJu-1W-V0o" id="BqB-cV-kZV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.85507246376824" y="76.339285714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gZL-nH-PFq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qmu-eE-5LN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bo0-ym-mbs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dPr-N6-6Rp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ai-eA-3H1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
