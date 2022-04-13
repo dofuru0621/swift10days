@@ -12,7 +12,7 @@ UIButton應用
 延伸Day1去做延伸
 把UILongPressGestureRecognizer放進Button裡即可長按
 
-#重點
+# 重點
 UILongPressGestureRecognizer的使用
 
 ## Day3.guessNumber 猜數字app
