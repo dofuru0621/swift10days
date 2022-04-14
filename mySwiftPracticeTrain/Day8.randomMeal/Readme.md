@@ -41,3 +41,9 @@ UIAlertController 實現
     @IBOutlet weak var riceLabel: UILabel!  
     @IBOutlet weak var noodleLabel: UILabel!  
 ```
+```
+1986. 我是順序清單.
+1999. 我是順序清單.
+1986\. 我只是一般文字.   
+1999\. 我只是一般文字.
+```
