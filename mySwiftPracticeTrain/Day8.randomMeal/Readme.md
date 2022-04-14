@@ -38,8 +38,7 @@ UIAlertController 實現
 <li>餐點ImageView</li>  
 
 ```
-1986. 我是順序清單.
-1999. 我是順序清單.
-1986\. 我只是一般文字.   
-1999\. 我只是一般文字.
+    @IBOutlet weak var brunchLabel: UILabel!
+    @IBOutlet weak var riceLabel: UILabel!
+    @IBOutlet weak var noodleLabel: UILabel!
 ```
