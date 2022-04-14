@@ -41,3 +41,13 @@ Int Float Sring型別轉換
 
 > 重點:
 現有方法使用及設定
+
+## Day7 orderMenuApp
+輸入姓名且設定各項餐點後 得到號碼牌及即視圖像
+
+> 重點:
+> autolayout 使用\n
+> imageView 使用
+> segmented Control 使用
+> hiddenview 應用
+> UIButton圓角設定
