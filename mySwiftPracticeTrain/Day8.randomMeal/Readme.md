@@ -159,6 +159,7 @@ UIStepper已在Storyboard中設定最小值為1，最大值為100
         }
     }
 ```
+##  設定alert樣式
 ```
   //  設定alert訊息匡的樣式
     func alertFunction(){
