@@ -35,7 +35,52 @@ UIAlertController 實現
 <img width="250" alt="截圖 2022-04-14 下午5 36 20" src="https://user-images.githubusercontent.com/74231280/163358887-0e6d585d-1b97-4ca3-80c2-aa2984cef7b2.png">
 
 ## Outlet定義
-<li>餐點ImageView</li>  
+<li>餐點Label</li>  
+
+```
+    @IBOutlet weak var brunchLabel: UILabel!
+    @IBOutlet weak var riceLabel: UILabel!
+    @IBOutlet weak var noodleLabel: UILabel!
+```
+
+<li>開關Switch</li>  
+
+![螢幕錄製_2022-04-14_下午6_34_12_AdobeCreativeCloudExpress](https://user-images.githubusercontent.com/74231280/163371336-2b2a8d97-b503-4e81-a011-edd1fb453e83.gif)
+
+```
+    @IBOutlet weak var brunchLabel: UILabel!
+    @IBOutlet weak var riceLabel: UILabel!
+    @IBOutlet weak var noodleLabel: UILabel!
+```  
+<li>倍率UIStepper</li>  
+![螢幕錄製_2022-04-14_下午6_31_38_AdobeCreativeCloudExpress](https://user-images.githubusercontent.com/74231280/163371351-9892330c-a0be-44bd-808a-64acf3271b4f.gif)
+
+### 把Slider.value存進去常數裡，倍率的label.Text隨著Slider.value改變
+> 如果不小心改到0倍請放心，會跳出訊息匡跟你說的！
+
+```
+    @IBAction func brinchStepper(_ sender: UIStepper) {
+        probability1 = Int(sender.value)
+        alertFunction()
+        brunchLabel.text = "\(probability1)x"
+       
+    }
+     @IBAction func riceStepper(_ sender: UIStepper) {
+        probability2 = Int(sender.value)
+        alertFunction()
+        riceLabel.text = "\(probability2)x"
+    }
+    
+    @IBAction func noodleStepper(_ sender: UIStepper) {
+        probability3 = Int(sender.value)
+        alertFunction()
+        noodleLabel.text = "\(probability3)x"
+    }
+```
+UIStepper已在Storyboard中設定最小值為1，最大值為100
+<img width="150" alt="截圖 2022-04-14 下午6 37 27" src="https://user-images.githubusercontent.com/74231280/163371700-cec5035a-5235-4a9b-a7cd-c72ccc0e0600.png">
+
+<li>餐點Label</li>  
 
 ```
     @IBOutlet weak var brunchLabel: UILabel!
