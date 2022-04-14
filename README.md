@@ -53,3 +53,12 @@ Int Float Sring型別轉換
 > hiddenview 應用  
 > UIButton圓角設定  
 
+## Day8 randomMenuApp
+使用switch and stepper 調整並抽取
+
+> 重點:  
+> autolayout 使用  
+> UISwitch 使用  
+> UIstepper 使用  
+> StringArray 應用  
+> UIAlertController 實現
