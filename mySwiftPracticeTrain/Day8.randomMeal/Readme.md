@@ -36,4 +36,4 @@ UIAlertController 實現
 
 ## Outlet定義
 <li>餐點ImageView
-<li>餐點ImageView
+餐點ImageView
