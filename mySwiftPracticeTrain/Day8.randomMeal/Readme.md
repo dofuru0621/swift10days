@@ -35,4 +35,5 @@ UIAlertController 實現
 <img width="250" alt="截圖 2022-04-14 下午5 36 20" src="https://user-images.githubusercontent.com/74231280/163358887-0e6d585d-1b97-4ca3-80c2-aa2984cef7b2.png">
 
 ## Outlet定義
-<li>餐點ImageView</li>
+<li>餐點ImageView
+<li>餐點ImageView
