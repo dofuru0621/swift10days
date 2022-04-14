@@ -4,9 +4,9 @@
 ## Day1.tapToCount 點擊計算器
 透過button計算次數顯示在label上
 
-> 重點:
-> var let 關鍵字的使用
-> UIButton應用
+> 重點:  
+> var let 關鍵字的使用  
+> UIButton應用  
 
 ## Day2 tapAndHoldToCOunt 點擊及長按計算器
 延伸Day1去做延伸
