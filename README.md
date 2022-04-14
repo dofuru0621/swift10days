@@ -25,10 +25,10 @@ Textfiled 的 Optional 應用 及 判斷式寫法
 利用 Slider滑桿 去控制 RGB的值 且背景顏色隨值調動 
 進而去顯示 RGB的值 及 16進位編號
 
-> 重點:
-UISlider 應用
-Int to Hex 方法
-View.backgound 使用
+> 重點:  
+> UISlider 應用  
+> Int to Hex 方法  
+> View.backgound 使用  
 
 ## Day5 tipCalculator
 輸入消費金額後利用Slider調整小費費率計算總價錢
@@ -46,8 +46,8 @@ Int Float Sring型別轉換
 輸入姓名且設定各項餐點後 得到號碼牌及即視圖像
 
 > 重點:
-autolayout 使用
-imageView 使用
-segmented Control 使用
-hiddenview 應用
-UIButton圓角設定
+> autolayout 使用  
+> imageView 使用  
+> segmented Control 使用  
+> hiddenview 應用  
+> UIButton圓角設定  
