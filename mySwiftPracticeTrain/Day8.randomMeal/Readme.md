@@ -1,7 +1,7 @@
 # randomMealApp(早午餐版)
 
 
-你有想早午晚餐的選擇障礙嗎？不妨自己做一個app讓他決定吧！
+你有想早午晚餐的選擇障礙嗎？不妨自己做一個app讓他決定吧！  
 目的：學習autolayout,Switch,Stepper,UIAlert
 UISwitch 使用
 UIstepper 使用
