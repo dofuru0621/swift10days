@@ -28,9 +28,11 @@ UIAlertController 實現
 > 1 個 Button
   
 ## Storyboard
-左半部為餐點類名稱，右半部為選擇功能區
-選擇餐點: 使用Switch，決定要不要加入餐點
-調整倍率: 使用Stepper，判斷餐點類的機率為多少
+左半部為餐點類名稱，右半部為選擇功能區  
+選擇餐點: 使用Switch，決定要不要加入餐點  
+調整倍率: 使用Stepper，判斷餐點類的機率為多少  
 
 <img width="250" alt="截圖 2022-04-14 下午5 36 20" src="https://user-images.githubusercontent.com/74231280/163358887-0e6d585d-1b97-4ca3-80c2-aa2984cef7b2.png">
 
+## Outlet定義
+<li>餐點ImageView</li>
