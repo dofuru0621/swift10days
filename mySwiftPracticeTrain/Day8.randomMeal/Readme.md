@@ -54,8 +54,9 @@ UIAlertController 實現
     @IBOutlet weak var noodleLabel: UILabel!
 ```  
 <li>倍率UIStepper</li>  
-![螢幕錄製_2022-04-14_下午6_31_38_AdobeCreativeCloudExpress](https://user-images.githubusercontent.com/74231280/163372314-ec164ca9-1c0a-4242-8439-9e95dd5e6c00.gif)
 
+
+![螢幕錄製_2022-04-14_下午6_31_38_AdobeCreativeCloudExpress (1)](https://user-images.githubusercontent.com/74231280/163373680-7524a349-0fb9-41c8-b69f-653d25397b8d.gif)
 
 
 
@@ -85,6 +86,7 @@ UIAlertController 實現
     }
 ```
 UIStepper已在Storyboard中設定最小值為1，最大值為100 
+
 <img width="150" alt="截圖 2022-04-14 下午6 37 27" src="https://user-images.githubusercontent.com/74231280/163371700-cec5035a-5235-4a9b-a7cd-c72ccc0e0600.png">
 
 <li>餐點Label</li>  
