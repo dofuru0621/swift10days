@@ -89,10 +89,100 @@ UIStepper已在Storyboard中設定最小值為1，最大值為100
 
 <img width="150" alt="截圖 2022-04-14 下午6 37 27" src="https://user-images.githubusercontent.com/74231280/163371700-cec5035a-5235-4a9b-a7cd-c72ccc0e0600.png">
 
-<li>餐點Label</li>  
+### 設定初始值
 
 ```
-    @IBOutlet weak var brunchLabel: UILabel!
-    @IBOutlet weak var riceLabel: UILabel!
-    @IBOutlet weak var noodleLabel: UILabel!
+    //  設定早午餐種類、飯類、麵類
+        var brunchItem = ["morningbreakfest","taiwanDabin","mywave"]
+        var riceItem = ["whiteRice","friesRices","Risotto"]
+        var noodleItem = ["soupnoodles","friesnoodles","wolongnoodles"]
+        //  最後的陣列
+        var regitemAns:Array = [String]()
+        //  早午餐暫存陣列
+        var regitem1:Array = [String]()
+        //  飯類暫存陣列
+        var regitem2:Array = [String]()
+        //  麵類暫存陣列
+        var regitem3:Array = [String]()
+        //  設定switch有沒被按過
+        var true1 = false
+        var true2 = false
+        var true3 = false
+        @IBOutlet weak var finalLabel: UILabel!
+        //  設定倍率 初始為1倍
+        var probability1 = 1
+        var probability2 = 1
+        var probability3 = 1
+
+```
+
+## 按下Go!後所產生的動作
+按下按鈕會呼叫以下兩種程式
+
+```
+    @IBAction func goButton(_ sender: UIButton) {
+        cout()
+        randomMeal()
+    }
+```
+
+```
+   func cout(){
+        //如果大於一倍 加入額外倍率與暫存陣列進總暫存陣列
+        if probability1 >= 1{
+        for i in 1 ... probability1{
+            regitemAns = regitemAns + regitem1
+        }}
+        if probability1 >= 1{
+        for j in 1 ... probability2{
+            regitemAns = regitemAns + regitem2
+        }}
+        print(regitemAns)
+        if probability1 >= 1{
+        for k in 1 ... probability1{
+            regitemAns = regitemAns + regitem3
+        }}
+        //print(regitemAns)
+    }
+```
+
+
+```
+    //先計算出總共有幾項 在random 1 ～ 總數
+    func randomMeal(){
+        for times in regitemAns{
+            timesValue = timesValue + 1
+        }
+        timesValue = Int.random(in: 1 ... timesValue)
+        for timesRight in regitemAns{
+            finalLabel.text = "Your final Meal's : \(regitemAns[timesValue])"
+        }
+    }
+```
+```
+  //  設定alert訊息匡的樣式
+    func alertFunction(){
+        if probability1 == 0{
+            let controller = UIAlertController(title: "倍率不為0", message: "要為0按左邊按鈕", preferredStyle: .alert)
+               let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+               controller.addAction(okAction)
+               present(controller, animated: true, completion: nil)
+            probability1 = 1
+        }
+        if probability2 == 0{
+            let controller = UIAlertController(title: "倍率不為0", message: "要為0按左邊按鈕", preferredStyle: .alert)
+               let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+               controller.addAction(okAction)
+               present(controller, animated: true, completion: nil)
+            probability2 = 1
+        }
+        if probability3 == 0{
+            let controller = UIAlertController(title: "倍率不為0", message: "要為0按左邊按鈕", preferredStyle: .alert)
+               let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+               controller.addAction(okAction)
+               present(controller, animated: true, completion: nil)
+            probability3 = 1
+        }
+        
+    }
 ```
