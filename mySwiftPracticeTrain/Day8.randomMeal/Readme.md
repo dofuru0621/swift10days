@@ -36,11 +36,7 @@ UIAlertController 實現
 
 ## Outlet定義
 <li>餐點ImageView</li>  
-``` 
-    @IBOutlet weak var brunchLabel: UILabel!  
-    @IBOutlet weak var riceLabel: UILabel!  
-    @IBOutlet weak var noodleLabel: UILabel!  
-```
+
 ```
 1986. 我是順序清單.
 1999. 我是順序清單.
