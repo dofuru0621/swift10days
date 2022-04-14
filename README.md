@@ -8,7 +8,7 @@
 > var let 關鍵字的使用  
 > UIButton應用
 
-[========]
+
 ## Day2 tapAndHoldToCOunt 點擊及長按計算器
 延伸Day1去做延伸
 把UILongPressGestureRecognizer放進Button裡即可長按
