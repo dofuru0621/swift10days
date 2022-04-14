@@ -45,7 +45,8 @@ UIAlertController 實現
 
 <li>開關Switch</li>  
 
-![螢幕錄製_2022-04-14_下午6_34_12_AdobeCreativeCloudExpress](https://user-images.githubusercontent.com/74231280/163371336-2b2a8d97-b503-4e81-a011-edd1fb453e83.gif)
+![ 1212](https://user-images.githubusercontent.com/74231280/163372492-39032f58-4729-49ba-9daa-910c44727ec9.gif)
+
 
 ```
     @IBOutlet weak var brunchLabel: UILabel!
@@ -53,10 +54,16 @@ UIAlertController 實現
     @IBOutlet weak var noodleLabel: UILabel!
 ```  
 <li>倍率UIStepper</li>  
-![螢幕錄製_2022-04-14_下午6_31_38_AdobeCreativeCloudExpress](https://user-images.githubusercontent.com/74231280/163371351-9892330c-a0be-44bd-808a-64acf3271b4f.gif)
+![螢幕錄製_2022-04-14_下午6_31_38_AdobeCreativeCloudExpress](https://user-images.githubusercontent.com/74231280/163372314-ec164ca9-1c0a-4242-8439-9e95dd5e6c00.gif)
+
+
+
+
 
 ### 把Slider.value存進去常數裡，倍率的label.Text隨著Slider.value改變
 > 如果不小心改到0倍請放心，會跳出訊息匡跟你說的！
+<img width="206" alt="截圖 2022-04-14 下午6 31 58" src="https://user-images.githubusercontent.com/74231280/163372615-7490d26d-2615-40fe-93a2-6a23cd76662a.png">
+
 
 ```
     @IBAction func brinchStepper(_ sender: UIStepper) {
@@ -77,7 +84,7 @@ UIAlertController 實現
         noodleLabel.text = "\(probability3)x"
     }
 ```
-UIStepper已在Storyboard中設定最小值為1，最大值為100
+UIStepper已在Storyboard中設定最小值為1，最大值為100 
 <img width="150" alt="截圖 2022-04-14 下午6 37 27" src="https://user-images.githubusercontent.com/74231280/163371700-cec5035a-5235-4a9b-a7cd-c72ccc0e0600.png">
 
 <li>餐點Label</li>  
