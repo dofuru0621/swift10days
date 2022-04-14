@@ -36,6 +36,6 @@ UIAlertController 實現
 
 ## Outlet定義
 <li>餐點ImageView</li>
-    @IBOutlet weak var brunchLabel: UILabel!
+ˋ    @IBOutlet weak var brunchLabel: UILabel!`
     @IBOutlet weak var riceLabel: UILabel!
     @IBOutlet weak var noodleLabel: UILabel!
