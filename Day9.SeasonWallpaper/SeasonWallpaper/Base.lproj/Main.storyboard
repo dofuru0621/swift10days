@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mali-Medium.ttf">
+            <string>Mali-Medium</string>
+        </array>
+        <array key="Mali-Regular.ttf">
+            <string>Mali-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SeasonWallpaper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="autumn-background" translatesAutoresizingMaskIntoConstraints="NO" id="hE4-OM-KTp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="autumn" translatesAutoresizingMaskIntoConstraints="NO" id="mvB-Dd-McW">
+                                <rect key="frame" x="57" y="94" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="b2Z-8P-sLu"/>
+                                    <constraint firstAttribute="width" constant="300" id="p5L-cr-L34"/>
+                                </constraints>
+                            </imageView>
+                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3NO-Y9-CIj">
+                                <rect key="frame" x="30" y="366" width="354" height="386"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="toh-Yv-jz9">
+                                    <rect key="frame" x="0.0" y="0.0" width="354" height="386"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OSt-gq-mE8">
+                                            <rect key="frame" x="18" y="28" width="318" height="330"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="Vgd-iM-EW1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="318" height="51"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="Dge-a9-slM"/>
+                                                    </constraints>
+                                                    <segments>
+                                                        <segment title="Spring"/>
+                                                        <segment title="Summer"/>
+                                                        <segment title="Autumn"/>
+                                                        <segment title="Winter"/>
+                                                    </segments>
+                                                    <connections>
+                                                        <action selector="segmentedControlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Cbz-TS-dFu"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="Ep9-VD-Mvt">
+                                                    <rect key="frame" x="0.0" y="70" width="318" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="N4H-ip-3uA"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <action selector="datePickerChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="owz-a8-IuY"/>
+                                                    </connections>
+                                                </datePicker>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0yK-HM-cuY">
+                                                    <rect key="frame" x="0.0" y="190" width="318" height="20"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPK-Gd-C4o">
+                                                            <rect key="frame" x="0.0" y="0.0" width="259" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Mali-Regular" family="Mali" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WcS-Dr-fBi">
+                                                            <rect key="frame" x="269" y="0.0" width="51" height="20"/>
+                                                            <connections>
+                                                                <action selector="labelSwitchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="hHn-Ta-HoA"/>
+                                                            </connections>
+                                                        </switch>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="O7P-D8-9Wo"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XeY-Py-iOf">
+                                                    <rect key="frame" x="0.0" y="230" width="318" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transparency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.65000000000000002" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3hH-4T-WpO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="158" height="40"/>
+                                                            <fontDescription key="fontDescription" name="Mali-Regular" family="Mali" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.5" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4mw-u7-coQ">
+                                                            <rect key="frame" x="166" y="0.0" width="154" height="41"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="HkT-lh-i00"/>
+                                                                <constraint firstAttribute="width" constant="150" id="eIt-Z2-a0l"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <action selector="transparencySliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="MD9-Yq-avL"/>
+                                                            </connections>
+                                                        </slider>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bjy-Iv-jyg">
+                                                    <rect key="frame" x="0.0" y="290" width="318" height="40"/>
+                                                    <color key="backgroundColor" name="autumn"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="maS-Xo-aPa"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Mali-Medium" family="Mali" pointSize="22"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Generate">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <integer key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <segue destination="uv2-75-gRs" kind="show" id="7mF-mX-9yL"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="OSt-gq-mE8" firstAttribute="leading" secondItem="toh-Yv-jz9" secondAttribute="leadingMargin" constant="10" id="7YO-R2-knX"/>
+                                        <constraint firstItem="OSt-gq-mE8" firstAttribute="top" secondItem="toh-Yv-jz9" secondAttribute="topMargin" constant="20" id="Ceo-IF-Qk9"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="OSt-gq-mE8" secondAttribute="bottom" constant="20" id="OIb-CD-9xj"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="OSt-gq-mE8" secondAttribute="trailing" constant="10" id="WC4-9p-QMQ"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="40"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <blurEffect style="light"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ao6-H1-Cd3">
+                                <rect key="frame" x="0.0" y="792" width="414" height="50"/>
+                                <color key="backgroundColor" name="autumn"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6Ke-16-S1q"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="pageControlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="0Gy-9s-x3D"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mvB-Dd-McW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="1T2-o0-O8u"/>
+                            <constraint firstItem="3NO-Y9-CIj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2TO-fj-86J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3NO-Y9-CIj" secondAttribute="trailing" constant="30" id="5s6-xa-80w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ao6-H1-Cd3" secondAttribute="trailing" id="7lp-su-Bv9"/>
+                            <constraint firstItem="Ao6-H1-Cd3" firstAttribute="top" secondItem="3NO-Y9-CIj" secondAttribute="bottom" constant="40" id="9Lg-CI-tX3"/>
+                            <constraint firstItem="hE4-OM-KTp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NfL-zK-VVj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ao6-H1-Cd3" secondAttribute="bottom" constant="20" id="YNa-Tc-dZJ"/>
+                            <constraint firstItem="Ao6-H1-Cd3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fNk-ja-1lW"/>
+                            <constraint firstItem="mvB-Dd-McW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lMT-sq-xxL"/>
+                            <constraint firstItem="hE4-OM-KTp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oqy-h6-VO1"/>
+                            <constraint firstItem="3NO-Y9-CIj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="qXQ-q3-047"/>
+                            <constraint firstItem="hE4-OM-KTp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="slv-gY-bqO"/>
+                            <constraint firstAttribute="bottom" secondItem="hE4-OM-KTp" secondAttribute="bottom" id="v7I-T7-7rm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="hE4-OM-KTp" id="NL5-Mm-fdO"/>
+                        <outlet property="datePicker" destination="Ep9-VD-Mvt" id="E5h-eK-cqt"/>
+                        <outlet property="generateButton" destination="Bjy-Iv-jyg" id="9bf-ym-4SB"/>
+                        <outlet property="labelSwitch" destination="WcS-Dr-fBi" id="TNd-Hn-Tfh"/>
+                        <outlet property="pageControl" destination="Ao6-H1-Cd3" id="IJt-Ue-xtl"/>
+                        <outlet property="seasonNameImageView" destination="mvB-Dd-McW" id="EeG-LZ-pnt"/>
+                        <outlet property="segmentedControl" destination="Vgd-iM-EW1" id="U9x-sI-4AK"/>
+                        <outlet property="transparencySlider" destination="4mw-u7-coQ" id="o3Q-iI-jWr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="55.580357142857139"/>
+        </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="0eE-zN-lSQ">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="uv2-75-gRs" customClass="PhotoViewController" customModule="SeasonWallpaper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zWy-nw-RXs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="autumn-background" translatesAutoresizingMaskIntoConstraints="NO" id="h29-db-hbn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLx-ad-3VV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rYa-Jj-foE" appends="YES" id="9wc-JG-Pb8"/>
+                                </connections>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="autumn" translatesAutoresizingMaskIntoConstraints="NO" id="pnk-EZ-K5e">
+                                <rect key="frame" x="57" y="94" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Ghb-wX-N4P"/>
+                                    <constraint firstAttribute="height" constant="200" id="huq-X9-O6T"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cZG-ej-Nao"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tLx-ad-3VV" firstAttribute="top" secondItem="zWy-nw-RXs" secondAttribute="top" id="Ab0-YA-baJ"/>
+                            <constraint firstItem="tLx-ad-3VV" firstAttribute="trailing" secondItem="cZG-ej-Nao" secondAttribute="trailing" id="Jca-3R-9v5"/>
+                            <constraint firstItem="h29-db-hbn" firstAttribute="leading" secondItem="cZG-ej-Nao" secondAttribute="leading" id="K2O-c0-mpf"/>
+                            <constraint firstItem="h29-db-hbn" firstAttribute="top" secondItem="zWy-nw-RXs" secondAttribute="top" id="O4d-qC-BH5"/>
+                            <constraint firstAttribute="bottom" secondItem="h29-db-hbn" secondAttribute="bottom" id="PLk-u0-njg"/>
+                            <constraint firstItem="pnk-EZ-K5e" firstAttribute="top" secondItem="cZG-ej-Nao" secondAttribute="top" constant="50" id="UCI-VQ-DXH"/>
+                            <constraint firstItem="h29-db-hbn" firstAttribute="trailing" secondItem="cZG-ej-Nao" secondAttribute="trailing" id="blR-Ic-NGh"/>
+                            <constraint firstItem="tLx-ad-3VV" firstAttribute="leading" secondItem="cZG-ej-Nao" secondAttribute="leading" id="jjL-ON-zMY"/>
+                            <constraint firstAttribute="bottom" secondItem="tLx-ad-3VV" secondAttribute="bottom" id="qd1-6K-dLm"/>
+                            <constraint firstItem="pnk-EZ-K5e" firstAttribute="centerX" secondItem="zWy-nw-RXs" secondAttribute="centerX" id="rUu-5Y-hX2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="M3b-fc-vWj"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="h29-db-hbn" id="3Z7-WE-Hk8"/>
+                        <outlet property="seasonNameImageView" destination="pnk-EZ-K5e" id="2H8-Am-sPP"/>
+                        <outlet property="tapView" destination="tLx-ad-3VV" id="aMQ-ru-XRC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dbb-Qr-Rpk" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rYa-Jj-foE">
+                    <connections>
+                        <outlet property="delegate" destination="tLx-ad-3VV" id="lMx-Ho-i31"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="889.85507246376824" y="55.580357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="autumn" width="600" height="400"/>
+        <image name="autumn-background" width="1080" height="1920"/>
+        <namedColor name="autumn">
+            <color red="0.60799998044967651" green="0.39599999785423279" blue="0.12200000137090683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
