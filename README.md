@@ -35,7 +35,7 @@ Textfiled 的 Optional 應用 及 判斷式寫法
 輸入消費金額後利用Slider調整小費費率計算總價錢
 
 > 重點:
-Int Float Sring型別轉換
+> Int Float Sring型別轉換
 
 ## Day6 currentTime 時間刷新
 使用 NSDate() 與 NsFormat()的方法 顯示當前時間 "yyyy-MM-dd HH:mm:ss"
@@ -74,3 +74,12 @@ Int Float Sring型別轉換
 > imageView 使用   
 > UISlider使用  
 > UIStepper使用
+
+## Day10 appPasscode
+鎖屏程式
+
+> 重點：
+> UIAlertController 及 UIAlertAction設定  
+> dropLast 使用  
+> switch case 設計  
+> 
