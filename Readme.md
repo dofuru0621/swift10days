@@ -54,6 +54,7 @@
 ```
 ## 5.建立imagechange:
 根據輸入的個數更改圖案，讓人看的出來輸入幾位數
+![螢幕錄製_2022-04-23_下午9_04_52_AdobeCreativeCloudExpress](https://user-images.githubusercontent.com/74231280/164895836-3cdbeb4c-af40-4e84-abc3-a2eb6af2a668.gif)
 
 ```
   func imagechange(){
