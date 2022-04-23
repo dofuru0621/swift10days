@@ -7,5 +7,8 @@
 
 1. 建立IBAction：
 
+1. Item 1
+1. Item 2
+1. Item 3
 * UIButton enterPasscode 輸入密碼
 * UIButton backward 清除密碼一位數
