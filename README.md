@@ -62,3 +62,15 @@ Int Float Sring型別轉換
 > UIstepper 使用  
 > StringArray 應用  
 > UIAlertController 實現
+
+## Day9 SeasonWallpaper
+選取季節及調整背景透明深淺製造桌布
+
+> 重點：
+> PageControl 使用
+> Visual Effect View  使用
+> Data Picker使用
+> autolayout 使用 
+> imageView 使用 
+> UISlider使用
+> UIStepper使用
