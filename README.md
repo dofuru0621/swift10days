@@ -1,4 +1,4 @@
-# swift30days
+# swift10days
 ![github cover](https://user-images.githubusercontent.com/74231280/163137867-d8497df7-0d5a-44d1-949e-6adac8f72a94.png)
 ` 使用Xcode編譯 `  
 
